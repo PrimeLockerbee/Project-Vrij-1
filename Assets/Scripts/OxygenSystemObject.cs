@@ -6,9 +6,19 @@ public class OxygenSystemObject : MonoBehaviour
 {
     OxygenSystem go_PlayerReference;
 
+    float f_OxygenAmount = 10;
+
     private void Start()
     {
         go_PlayerReference = GameObject.FindGameObjectWithTag("Player").GetComponent<OxygenSystem>();
+    }
+
+    private void Update()
+    {
+        if(f_OxygenAmount <= 0)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     private void OnTriggerStay(Collider other)
@@ -21,6 +31,7 @@ public class OxygenSystemObject : MonoBehaviour
 
     void Addition()
     {
-        go_PlayerReference.i_PlayerOxygen += .5f;
+        go_PlayerReference.i_PlayerOxygen += 2f;
+        f_OxygenAmount -= 1f;
     }
 }
