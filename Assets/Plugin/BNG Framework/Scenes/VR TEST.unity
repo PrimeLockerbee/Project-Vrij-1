@@ -1700,6 +1700,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 193936371}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &206452911
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 206452912}
+  m_Layer: 0
+  m_Name: PointOfImpact
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &206452912
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206452911}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.111, y: 0.7211, z: 0.1076}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9055314626199018895}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &210568837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103435,7 +103466,7 @@ GameObject:
   - component: {fileID: 5199804996159434975}
   - component: {fileID: 5903461795686757125}
   m_Layer: 0
-  m_Name: pCube1
+  m_Name: Pick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105858,6 +105889,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9055314626199018895}
   - component: {fileID: 9055314626199018896}
+  - component: {fileID: 9055314626199018897}
   m_Layer: 0
   m_Name: IcePick
   m_TagString: Untagged
@@ -109819,6 +109851,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2935186728095288521}
+  - {fileID: 206452912}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -109891,6 +109924,33 @@ MonoBehaviour:
   UseCustomInspector: 1
   lastFlickTime: 0
   FlickForce: 1
+--- !u!114 &9055314626199018897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8566163152709715765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93a4586c73f3cb34593b8c6cfe7a10c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxRange: 100
+  GrappleReelForce: 0.5
+  MinReelDistance: 0.25
+  GrappleForce: 3
+  GrappleForceMode: 5
+  GrappleLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  MuzzleTransform: {fileID: 0}
+  HitTargetPrefab: {fileID: 0}
+  GrappleLine: {fileID: 0}
+  HelperLine: {fileID: 0}
+  GrappleShotSound: {fileID: 0}
+  currentGrappleDistance: 0
+  ClimbHelper: {fileID: 0}
 --- !u!4 &9057466616326483655
 Transform:
   m_ObjectHideFlags: 0
