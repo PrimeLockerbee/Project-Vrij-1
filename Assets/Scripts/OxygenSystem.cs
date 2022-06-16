@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class OxygenSystem : MonoBehaviour
 {
     [SerializeField]
-    public float i_PlayerOxygen = 100;
+    public float i_PlayerOxygen;
 
     [SerializeField]
     Text t_OxygenText;
@@ -18,7 +18,7 @@ public class OxygenSystem : MonoBehaviour
 
     private void Update()
     {
-        t_OxygenText.text = i_PlayerOxygen.ToString();
+        t_OxygenText.text = "Current Oxygen level: " + i_PlayerOxygen.ToString();
     }
 
     void Subtract()

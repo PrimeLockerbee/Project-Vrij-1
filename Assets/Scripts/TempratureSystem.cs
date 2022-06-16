@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class TempratureSystem : MonoBehaviour
 {
     [SerializeField]
-    public float i_PlayerTemp = 37;
+    public float i_PlayerTemp;
 
     [SerializeField]
     Text t_TempratureText;
@@ -18,7 +18,7 @@ public class TempratureSystem : MonoBehaviour
 
     private void Update()
     {
-        t_TempratureText.text = i_PlayerTemp.ToString();
+        t_TempratureText.text = "Curren temprature: " + i_PlayerTemp.ToString();
     }
 
     void Subtract()
