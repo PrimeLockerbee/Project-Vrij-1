@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Hierarchy
   m_RootView: {fileID: 7}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 0
     width: 541
     height: 600
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 94
+  controlID: 128
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -94,8 +94,8 @@ MonoBehaviour:
     y: 0
     width: 385
     height: 939
-  m_MinSize: {x: 276, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 14}
@@ -121,8 +121,8 @@ MonoBehaviour:
     y: 0
     width: 480
     height: 600
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 95
+  controlID: 129
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -277,7 +277,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 96
+  controlID: 130
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -338,7 +338,7 @@ MonoBehaviour:
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
   m_PreviewResizer:
-    m_CachedPref: 1
+    m_CachedPref: 151
     m_ControlHash: 1412526313
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
@@ -635,22 +635,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Demo/Lili/terrain_prefab
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Demo/Lili/terrain_prefab
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\School\Project Vrij\Project Vrij 1
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5a5f0200
-    m_LastClickedID: 155482
-    m_ExpandedIDs: 0000000024c4000026c4000028c400002ac400002cc400002ec4000030c40000f4c4000000ca9a3b
+    scrollPos: {x: 0, y: 26}
+    m_SelectedIDs: f8c40000
+    m_LastClickedID: 50424
+    m_ExpandedIDs: 000000001ec4000020c4000022c4000024c4000026c4000028c400002ac40000eec4000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -678,7 +678,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000024c4000026c4000028c400002ac400002cc400002ec4000030c40000
+    m_ExpandedIDs: 000000001ec4000020c4000022c4000024c4000026c4000028c400002ac40000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -768,7 +768,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 3a60feffb062feff0263feff20b3feffcac8feff22c9feff4019ffff0621ffff6c21ffff2074ffffb2d2ffff2cfbffff2efbffff741901003a500200
+      m_ExpandedIDs: 2621fdffdc63fdffe463fdff0064fdff7867fdff7a67fdffd092fdffd492fdffd692fdff86d9fdff4addfdff9cddfdff5009feff1811feffba39feffc642feff2afbffffd0960100009a01006aa3010084a3010084a40100b0a50100f2b601000cb70100e4b701000cb80100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1018,9 +1018,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -83.91289, y: -140.77927, z: -270.70117}
+    m_Target: {x: -3.308, y: 1.2030699, z: -0.17700005}
     speed: 2
-    m_Value: {x: -83.91289, y: -140.77927, z: -270.70117}
+    m_Value: {x: -3.3079991, y: 1.2030689, z: -0.17700002}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1067,13 +1067,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.17946066, y: -0.3244999, z: 0.060841214, w: 0.9269342}
+    m_Target: {x: 0.27041847, y: -0.44181848, z: 0.13948712, w: 0.8442035}
     speed: 2
-    m_Value: {x: 0.179332, y: -0.32582235, z: 0.061097663, w: 0.9262543}
+    m_Value: {x: 0.2795883, y: -0.44504532, z: 0.14642909, w: 0.83804744}
   m_Size:
-    m_Target: 11.5598545
+    m_Target: 2.308843
     speed: 2
-    m_Value: 11.5598545
+    m_Value: 2.3088489
   m_Ortho:
     m_Target: 0
     speed: 2
