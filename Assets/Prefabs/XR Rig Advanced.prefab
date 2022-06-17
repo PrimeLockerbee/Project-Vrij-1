@@ -29996,13 +29996,13 @@ MonoBehaviour:
     type: 3}
   RequireAppFocus: 1
   SprintSpeed: 1.5
-  SprintInput: 0e000000
+  SprintInput: 00000000
   SprintAction: {fileID: -9014867403852775025, guid: e39f4b35a6db18348b41eb0262520e69,
     type: 3}
   StrafeSpeed: 1
   StrafeSprintSpeed: 1.25
   JumpForce: 3
-  JumpInput: 10000000
+  JumpInput: 00000000
   JumpAction: {fileID: 3598031526004978682, guid: e39f4b35a6db18348b41eb0262520e69,
     type: 3}
   AirControl: 1
