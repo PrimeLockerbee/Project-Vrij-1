@@ -14,8 +14,12 @@ GameObject:
   - component: {fileID: 3272251978063032830}
   - component: {fileID: 4110932321425524325}
   - component: {fileID: 6508468746882512963}
-  - component: {fileID: 2336812125651045336}
-  - component: {fileID: 8060994843301345476}
+  - component: {fileID: 5256384795667261300}
+  - component: {fileID: 677537461987232617}
+  - component: {fileID: 1190887208789498909}
+  - component: {fileID: 2667736882035965432}
+  - component: {fileID: 8094807839484039266}
+  - component: {fileID: 5806997248006063375}
   m_Layer: 0
   m_Name: IcePick
   m_TagString: Untagged
@@ -126,7 +130,11 @@ MonoBehaviour:
   SecondaryLookOffset: {x: 0, y: 0, z: 0}
   SecondaryLookAtTransform: {fileID: 0}
   LocalOffsetTransform: {fileID: 0}
-  GrabPoints: []
+  GrabPoints:
+  - {fileID: 7098995455903774102}
+  - {fileID: 3466087157227884001}
+  - {fileID: 7486325800367445553}
+  - {fileID: 7303305137491624494}
   UseCustomInspector: 1
   lastFlickTime: 0
   FlickForce: 1
@@ -179,7 +187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Scale: 0.5
---- !u!65 &2336812125651045336
+--- !u!65 &5256384795667261300
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -190,9 +198,9 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.012840271, y: 0.03144121, z: 0.059135437}
-  m_Center: {x: 0.002521515, y: 0.15924573, z: 0.059734344}
---- !u!65 &8060994843301345476
+  m_Size: {x: 0.014836935, y: 0.12664323, z: 0.032310285}
+  m_Center: {x: 0.0006553691, y: 0.08098528, z: -0.00013341382}
+--- !u!65 &677537461987232617
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -203,8 +211,60 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.012840271, y: 0.103354454, z: 0.026626587}
-  m_Center: {x: 0.002521515, y: -0.020234585, z: -0.0028381348}
+  m_Size: {x: 0.0234247, y: 0.15464312, z: 0.03704834}
+  m_Center: {x: -0.000021575084, y: -0.061555665, z: 0.0005722046}
+--- !u!65 &1190887208789498909
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3732307118382634389}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01647, y: 0.03491717, z: 0.043296814}
+  m_Center: {x: 0.00035501487, y: 0.24388076, z: 0.055545807}
+--- !u!65 &2667736882035965432
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3732307118382634389}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01647, y: 0.07185884, z: 0.059761047}
+  m_Center: {x: 0.00035518894, y: 0.21421418, z: 0.22380447}
+--- !u!65 &8094807839484039266
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3732307118382634389}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01647, y: 0.07200976, z: 0.023857117}
+  m_Center: {x: 0.00035493932, y: 0.18356387, z: 0.02451706}
+--- !u!65 &5806997248006063375
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3732307118382634389}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01647, y: 0.07200976, z: 0.023857117}
+  m_Center: {x: 0.00035493932, y: 0.18356387, z: 0.02451706}
 --- !u!1 &3949803944507280791
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,7 +292,7 @@ Transform:
   m_GameObject: {fileID: 3949803944507280791}
   m_LocalRotation: {x: 0.7197354, y: -0, z: -0, w: 0.6942486}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.73677224, y: 1.4521847, z: 7.6238275}
+  m_LocalScale: {x: 1.4735444, y: 2.90437, z: 15.247654}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4071255300989751087}
