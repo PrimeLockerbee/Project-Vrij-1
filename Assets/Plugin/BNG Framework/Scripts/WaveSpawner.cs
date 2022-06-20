@@ -20,7 +20,7 @@ public class WaveSpawner : MonoBehaviour
     private SpawnState ss_state = SpawnState.COUNTING;
 
     //Reference to the player
-    [SerializeField] private Player p_player;
+    //[SerializeField] private Player p_player;
 
     //List of waypoints for the enemy AI to go through
     [SerializeField] private List<Transform> t_wayPoints;
@@ -146,9 +146,9 @@ public class WaveSpawner : MonoBehaviour
         }
 
         Transform _sp = t_spawnPoints[Random.Range(0, t_spawnPoints.Length)];
-        EnemyAI eai_Enemy = Instantiate(_enemy, transform.position, transform.rotation).GetComponent<EnemyAI>();
-        eai_Enemy.t_waypoints = t_wayPoints;
-        eai_Enemy.p_player = p_player;
+        //EnemyAI eai_Enemy = Instantiate(_enemy, transform.position, transform.rotation).GetComponent<EnemyAI>();
+        //eai_Enemy.t_waypoints = t_wayPoints;
+        //eai_Enemy.p_player = p_player;
 
     }
 }
