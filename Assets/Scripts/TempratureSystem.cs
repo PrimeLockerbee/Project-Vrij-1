@@ -3,26 +3,59 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TempratureSystem : MonoBehaviour
+namespace BNG
 {
-    [SerializeField]
-    public float i_PlayerTemp = 37;
-
-    [SerializeField]
-    Text t_TempratureText;
-
-    void Start()
+    public class TempratureSystem : MonoBehaviour
     {
-        InvokeRepeating("Subtract", 1f, 1f);
+        [SerializeField]
+        public float i_PlayerTemp;
+
+        GameObject go_PlayerReference;
+
+        [SerializeField]
+        Text t_TempratureText;
+
+        [SerializeField]
+        GameObject go_GameOverScreen;
+
+        void Start()
+        {
+            go_PlayerReference = GameObject.FindGameObjectWithTag("Player");
+
+            InvokeRepeating("Subtract", 1f, 1f);
+        }
+
+
+        private void Update()
+        {
+            t_TempratureText.text = "Curren temprature: " + i_PlayerTemp.ToString();
+
+            if (i_PlayerTemp == 34f)
+            {
+                //Player Walks Slower
+            }
+
+            if (i_PlayerTemp <= 0)
+            {
+                i_PlayerTemp = 0;
+
+                go_PlayerReference.GetComponentInChildren<LocomotionManager>().enabled = false;
+                go_PlayerReference.GetComponentInChildren<PlayerRotation>().enabled = false;
+                go_PlayerReference.GetComponentInChildren<AudioSource>().enabled = false;
+                go_PlayerReference.GetComponentInChildren<PlayerClimbing>().enabled = false;
+                go_PlayerReference.GetComponentInChildren<PlayerMovingPlatformSupport>().enabled = false;
+                go_PlayerReference.GetComponentInChildren<TempratureSystem>().enabled = false;
+                go_PlayerReference.GetComponentInChildren<OxygenSystem>().enabled = false;
+
+                go_GameOverScreen.SetActive(true);
+            }
+        }
+
+        void Subtract()
+        {
+            i_PlayerTemp -= .1f;
+        }
     }
 
-    private void Update()
-    {
-        t_TempratureText.text = i_PlayerTemp.ToString();
-    }
-
-    void Subtract()
-    {
-        i_PlayerTemp -= .2f;
-    }
 }
+

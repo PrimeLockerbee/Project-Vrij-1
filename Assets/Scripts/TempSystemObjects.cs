@@ -2,25 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TempSystemObjects : MonoBehaviour
+namespace BNG
 {
-    TempratureSystem go_PlayerReference;
-
-    private void Start()
+    public class TempSystemObjects : MonoBehaviour
     {
-        go_PlayerReference = GameObject.FindGameObjectWithTag("Player").GetComponent<TempratureSystem>();
-    }
+        TempratureSystem go_PlayerReference;
 
-    private void OnTriggerStay(Collider other)
-    {
-        if(other.tag == "Player")
+        private void Start()
         {
-            InvokeRepeating("Addition", 1f, 1f);
+            go_PlayerReference = GameObject.FindGameObjectWithTag("Player").GetComponent<TempratureSystem>();
+        }
+
+        private void OnTriggerStay(Collider other)
+        {
+            if (other.tag == "Player")
+            {
+                InvokeRepeating("Addition", 1f, 1f);
+            }
+        }
+
+        void Addition()
+        {
+            go_PlayerReference.i_PlayerTemp += .2f;
         }
     }
 
-    void Addition()
-    {
-        go_PlayerReference.i_PlayerTemp += .2f;
-    }
 }
+
