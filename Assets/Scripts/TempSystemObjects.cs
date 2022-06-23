@@ -17,6 +17,7 @@ namespace BNG
         {
             if (other.tag == "Player")
             {
+                Debug.Log("HET WERKT: " + other.gameObject.name);
                 InvokeRepeating("Addition", 1f, 1f);
             }
         }
