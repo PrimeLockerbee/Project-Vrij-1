@@ -49,6 +49,11 @@ namespace BNG
 
                 go_GameOverScreen.SetActive(true);
             }
+
+            if (i_PlayerTemp >= 37)
+            {
+                i_PlayerTemp = 37;
+            }
         }
 
         void Subtract()

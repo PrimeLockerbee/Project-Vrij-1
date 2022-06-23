@@ -43,6 +43,11 @@ namespace BNG
 
                 go_GameOverScreen.SetActive(true);
             }
+
+            if(i_PlayerOxygen >= 100)
+            {
+                i_PlayerOxygen = 100;
+            }
         }
 
         void Subtract()

@@ -1213,12 +1213,12 @@ PrefabInstance:
     - target: {fileID: 5501381264916757695, guid: 6ddd8660f2abb9a4f8435e6c56817488,
         type: 3}
       propertyPath: m_Volume
-      value: 0.75
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 5501381264916757695, guid: 6ddd8660f2abb9a4f8435e6c56817488,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5501381264916757695, guid: 6ddd8660f2abb9a4f8435e6c56817488,
         type: 3}

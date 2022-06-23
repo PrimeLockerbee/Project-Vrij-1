@@ -1,15 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class GameEnding : MonoBehaviour
 {
     [SerializeField] GameObject go_PlayerFlag;
     [SerializeField] GameObject go_StaticFlag;
     [SerializeField] GameObject go_EndingScreen;
+    [SerializeField] AudioSource as_EndClip;
 
-    public float offsetTime = 10f;
-    private float timer = 0f;
+    [SerializeField] private float timer = 10f;
+
+
+    private void Update()
+    {
+        if (go_StaticFlag.activeSelf)
+        {
+            timer -= Time.deltaTime;
+            if (timer <= 0)
+            {
+                timer = 0f;
+                go_EndingScreen.SetActive(true);
+            }
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -17,15 +32,7 @@ public class GameEnding : MonoBehaviour
         {
             RenderSettings.fog = false;
             go_StaticFlag.SetActive(true);
-
-            timer += Time.deltaTime;
-            if (timer > offsetTime)
-            {
-                timer = 0f;
-                go_EndingScreen.SetActive(true);
-            }
-
-
+            as_EndClip.Play();
             Destroy(go_PlayerFlag);
         }
     }
