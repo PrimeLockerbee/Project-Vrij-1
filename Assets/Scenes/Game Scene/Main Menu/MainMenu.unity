@@ -796,6 +796,12 @@ PrefabInstance:
       propertyPath: m_Text
       value: Quit
       objectReference: {fileID: 0}
+    - target: {fileID: 6582385856564510024, guid: 967322e1e8809c747aba37329bcef35b,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: a9238c00c849ac64880fd00f84531576,
+        type: 3}
     - target: {fileID: 6582385856601030662, guid: 967322e1e8809c747aba37329bcef35b,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1482,7 +1488,7 @@ RectTransform:
   m_GameObject: {fileID: 1810868658816555220}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.0000043957}
-  m_LocalScale: {x: 1.7370229, y: 1.7370229, z: 1.7370229}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1810868657859352416}
@@ -1491,7 +1497,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.0051879883, y: -92}
+  m_AnchoredPosition: {x: 0.0051879883, y: -122}
   m_SizeDelta: {x: 1579.9, y: 150.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1810868658816555220
@@ -1668,6 +1674,12 @@ PrefabInstance:
       propertyPath: m_Text
       value: Start
       objectReference: {fileID: 0}
+    - target: {fileID: 6582385856564510024, guid: 967322e1e8809c747aba37329bcef35b,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: a9238c00c849ac64880fd00f84531576,
+        type: 3}
     - target: {fileID: 6582385856601030662, guid: 967322e1e8809c747aba37329bcef35b,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1922,7 +1934,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 0ebbcec4dd8e2f040b163f10df7e8382, type: 3}
+    m_Font: {fileID: 12800000, guid: a9238c00c849ac64880fd00f84531576, type: 3}
     m_FontSize: 86
     m_FontStyle: 1
     m_BestFit: 0
