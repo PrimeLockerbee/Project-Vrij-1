@@ -6,35 +6,16 @@ namespace BNG
 {
     public class OxygenSystemObject : MonoBehaviour
     {
-        OxygenSystem go_PlayerReference;
+        [SerializeField] OxygenSystem go_PlayerReference;
 
-        float f_OxygenAmount = 10;
-
-        private void Start()
+        private void OnTriggerEnter(Collider other)
         {
-            go_PlayerReference = GameObject.FindGameObjectWithTag("Player").GetComponent<OxygenSystem>();
-        }
-
-        private void Update()
-        {
-            if (f_OxygenAmount <= 0)
+            if (other.CompareTag("Player"))
             {
+                Debug.Log("HET WERKT: " + other.gameObject.name);
+                go_PlayerReference.i_PlayerOxygen += 40f;
                 Destroy(this.gameObject);
             }
-        }
-
-        private void OnTriggerStay(Collider other)
-        {
-            if (other.tag == "Player")
-            {
-                InvokeRepeating("Addition", 1f, 1f);
-            }
-        }
-
-        void Addition()
-        {
-            go_PlayerReference.i_PlayerOxygen += 2f;
-            f_OxygenAmount -= 1f;
         }
     }
 }

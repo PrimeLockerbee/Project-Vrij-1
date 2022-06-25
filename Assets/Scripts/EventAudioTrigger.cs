@@ -12,13 +12,14 @@ public class EventAudioTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-
-        if (b_hasPlayed == false)
+        if (other.CompareTag("Player"))
         {
-            b_hasPlayed = true;
-            as_VoiceLine.Play();
+            if (b_hasPlayed == false)
+            {
+                Debug.Log("HET WERKT: " + other.gameObject.name);
+                b_hasPlayed = true;
+                as_VoiceLine.Play();
+            }
         }
-
-
     }
 }
