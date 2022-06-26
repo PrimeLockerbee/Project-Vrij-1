@@ -3434,7 +3434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   go_PlayerFlag: {fileID: 1679206986}
   go_StaticFlag: {fileID: 1394349333}
-  go_EndingScreen: {fileID: 0}
+  go_EndingScreen: {fileID: 2699296499300427067}
   as_EndClip: {fileID: 219240101}
   timer: 10
 --- !u!65 &219240103
@@ -4335,7 +4335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bd0f08e417e47c4888aa9d034cd5d42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  go_PlayerReference: {fileID: 0}
+  go_PlayerReference: {fileID: 7890510734149721159}
 --- !u!65 &258142794
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5408,7 +5408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50eb6a6d9fed5c445890b7240ed853f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  go_PlayerReference: {fileID: 0}
+  go_PlayerReference: {fileID: 7890510734149721160}
   go_Container: {fileID: 701513404}
 --- !u!65 &327742649
 BoxCollider:
@@ -8061,7 +8061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50eb6a6d9fed5c445890b7240ed853f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  go_PlayerReference: {fileID: 0}
+  go_PlayerReference: {fileID: 7890510734149721160}
   go_Container: {fileID: 460595921}
 --- !u!65 &566327170
 BoxCollider:
@@ -18661,7 +18661,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bd0f08e417e47c4888aa9d034cd5d42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  go_PlayerReference: {fileID: 0}
+  go_PlayerReference: {fileID: 7890510734149721159}
 --- !u!65 &1031535873
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18991,7 +18991,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1060654773}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 33.83, y: 45.75, z: -23.46}
+  m_LocalPosition: {x: 33.83, y: 45.75, z: -23.94}
   m_LocalScale: {x: 8, y: 2, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20520,7 +20520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50eb6a6d9fed5c445890b7240ed853f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  go_PlayerReference: {fileID: 0}
+  go_PlayerReference: {fileID: 7890510734149721160}
   go_Container: {fileID: 1392315992}
 --- !u!65 &1152202046
 BoxCollider:
@@ -22299,7 +22299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bd0f08e417e47c4888aa9d034cd5d42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  go_PlayerReference: {fileID: 0}
+  go_PlayerReference: {fileID: 7890510734149721159}
 --- !u!65 &1235780757
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44635,7 +44635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bd0f08e417e47c4888aa9d034cd5d42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  go_PlayerReference: {fileID: 0}
+  go_PlayerReference: {fileID: 7890510734149721159}
 --- !u!65 &1450882266
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62407,7 +62407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50eb6a6d9fed5c445890b7240ed853f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  go_PlayerReference: {fileID: 0}
+  go_PlayerReference: {fileID: 7890510734149721160}
   go_Container: {fileID: 1358502265}
 --- !u!65 &2020928792
 BoxCollider:
@@ -88857,6 +88857,12 @@ PrefabInstance:
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f0e0539bd6704a45bc7c0c89b70fc21, type: 3}
+--- !u!1 &2699296499300427067 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5587552642775025709, guid: 7f0e0539bd6704a45bc7c0c89b70fc21,
+    type: 3}
+  m_PrefabInstance: {fileID: 2699296499300427066}
+  m_PrefabAsset: {fileID: 0}
 --- !u!135 &2700507550247194412
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -123256,7 +123262,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 418738502803766069}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 494e659c238ebc5428bdb4e8d43de9ca, type: 3}
   m_Name: 
