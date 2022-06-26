@@ -30,9 +30,6 @@ public class GameEnding : MonoBehaviour
     {
         if(other.tag == "Flag")
         {
-
-
-            RenderSettings.fog = false;
             go_StaticFlag.SetActive(true);
             as_EndClip.Play();
             Destroy(go_PlayerFlag);
